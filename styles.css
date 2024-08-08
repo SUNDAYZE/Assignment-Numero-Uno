@@ -1,10 +1,10 @@
-h1 {
-    color: black;
-    text-align: center;
-    font-size: 40px;
-}
 
 .navbar {
+    position: fixed;
+    top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
     background-color: #333;
     overflow: hidden;
 }
@@ -36,7 +36,7 @@ h1 {
 }
 
 
-body, html {
+body {
     background-color: #f0f0f0; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
     color: #333; 
@@ -45,19 +45,90 @@ body, html {
     line-height: 1.6; 
 }
 
-h1 {
-    color: black ;
-    text-align: center;
-    font-size: 40px;
-}
+ h1 {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ /* Modern styling for h1 */
+ .modern-heading {
+     font-family: 'Roboto', sans-serif;
+     /* Modern, clean font */
+     font-size: 4rem;
+     /* Large font size for impact */
+     font-weight: 600;
+     /* Bold text */
+     color: #333;
+     /* Dark gray color for text */
+     text-align: center;
+     /* Center the text */
+     line-height: 1.2;
+     /* Adjust line height for readability */
+     margin: 50px 0;
+     /* Space above and below the heading */
+     padding: 20px;
+     /* Padding around the text */
+     background: linear-gradient(90deg, #f0f0f0 0%, #e0e0e0 100%);
+     /* Subtle gradient background */
+     border-radius: 10px;
+     /* Rounded corners */
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+     /* Soft shadow effect */
+     transition: color 0.3s, transform 0.3s;
+     /* Smooth transitions */
+ }
+
+ .modern-heading:hover {
+     color: goldenrod;
+     /* Change color on hover */
+     transform: scale(1.05);
+     /* Slightly enlarge on hover */
+ }
 
 h2 {
-    color: black;
-    text-align: center;
-}
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Modern styling for h1 */
+    .modern2 {
+        font-family: 'Roboto', sans-serif;
+        /* Modern, clean font */
+        font-size: 2rem;
+        /* Large font size for impact */
+        font-weight: 600;
+        /* Bold text */
+        color: #333;
+        /* Dark gray color for text */
+        text-align: center;
+        /* Center the text */
+        line-height: 1.2;
+        /* Adjust line height for readability */
+        margin: 50px 0;
+        /* Space above and below the heading */
+        padding: 20px;
+        /* Padding around the text */
+        background: linear-gradient(90deg, #f0f0f0 0%, #e0e0e0 100%);
+        /* Subtle gradient background */
+        border-radius: 10px;
+        /* Rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        /* Soft shadow effect */
+        transition: color 0.3s, transform 0.3s;
+        /* Smooth transitions */
+    }
+
+    .modern2:hover {
+        color: goldenrod;
+        /* Change color on hover */
+        transform: scale(1.05);
+        /* Slightly enlarge on hover */
+    }
 
 p {
-    font-size: 18px;
+    font-size: 16px;
     max-width: fit-content;
     margin: 0 auto;
 }
@@ -69,49 +140,103 @@ h3 {
 
 img {
     max-width: 100%;
+    /* Ensure images scale responsively */
     height: auto;
     display: block;
+    margin: 0 auto;
+    /* Center images if needed */
 }
 
-.responsive-image {
-    width: 100%;
-    height: auto;
-    border: 2px solid #333;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px;
+/* Specific styles for each image */
+
+/* Style for the first image */
+.styled-image1 {
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Shadow effect */
 }
 
-.image-container {
-    text-align: center;
+/* Style for the second image */
+.styled-image2 {
+    padding: 5px;
+    /* Space between border and image */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    /* Shadow effect */
 }
 
-.centered-image {
-    display: inline-block;
-    width: 50%;
-    border: 3px solid #555;
+.container {
+    text-align: center; /* Center the ul inside this container */
+    font-size: 16px;
+        max-width: fit-content;
+        margin: 0 auto;
+}
+
+.centered-ul {
+    display: inline-block; /* Make the ul an inline-block element */
+    padding: 0;
+    margin: 0;
+
+}
+
+.centered-ul li {
+    display:list-item; /* Display list items in a row */
+    margin: 0 15px; /* Horizontal spacing between items */
+    list-style: none;
+}
+
+.centered-ul a {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Text color */
+}
+
+/* General styling for social media icons container */
+.social-media {
+    display: flex;
+    justify-content: center;
+    /* Center icons horizontally */
+    gap: 15px;
+    /* Spacing between icons */
+    padding: 20px;
+}
+
+/* General styling for individual icons */
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    /* Icon size */
+    height: 40px;
+    /* Icon size */
     border-radius: 50%;
-    transition: transform 0.3s;
+    /* Circular background */
+    background-color: #333;
+    /* Background color */
+    color: white;
+    /* Icon color */
+    text-decoration: none;
+    /* Remove underline */
+    font-size: 20px;
+    /* Icon size */
+    transition: background-color 0.3s, transform 0.3s;
+    /* Smooth transitions */
 }
 
-.centered-image:hover {
+.social-icon:hover {
+    background-color: #555;
+    /* Change background color on hover */
     transform: scale(1.1);
+    /* Slightly enlarge the icon on hover */
 }
 
-.styled-image {
-    width: 300px;
-    height: auto;
-    border: 5px solid #f4f4f4;
-    border-radius: 15px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-    filter: grayscale(100%);
-    transition: filter 0.5s;
+/* Specific background colors for each icon */
+.facebook {
+    background-color: #3b5998;
 }
 
-.styled-image:hover {
-    filter: grayscale(0%);
+.twitter {
+    background-color: #1da1f2;
 }
 
-
-
-
+.instagram {
+    background-color: #e4405f;
+}
