@@ -36,7 +36,7 @@ h1 {
 }
 
 
-body {
+body, html {
     background-color: #f0f0f0; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
     color: #333; 
@@ -58,7 +58,7 @@ h2 {
 
 p {
     font-size: 18px;
-    max-width: 600px;
+    max-width: fit-content;
     margin: 0 auto;
 }
 
