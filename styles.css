@@ -1,42 +1,116 @@
+h1 {
+    color: black;
+    text-align: center;
+    font-size: 40px;
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar-item {
+    display: inline;
+}
+
+.navbar-link {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar-link:hover {
+    background-color: #575757;
+    color: goldenrod;
+}
+
+
 body {
-    background-color: #f0f0f0; /* Light grey background */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font style */
-    color: #333; /* Dark grey text color */
-    margin: 0; /* Remove default margin */
-    padding: 20px; /* Padding around the body */
-    line-height: 1.6; /* Line height for readability */
+    background-color: #f0f0f0; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    color: #333; 
+    margin: 0; 
+    padding: 20px; 
+    line-height: 1.6; 
 }
 
 h1 {
-    color: #0056b3;
-    /* Blue color for headings */
+    color: black ;
     text-align: center;
-    /* Center the heading */
     font-size: 40px;
 }
 
 h2 {
     color: black;
-    /* Blue color for headings */
     text-align: center;
 }
 
 p {
     font-size: 18px;
-    /* Larger font size for paragraphs */
     max-width: 600px;
-    /* Limit the width of paragraphs */
     margin: 0 auto;
-    /* Center paragraphs */
 }
 
 h3 {
     color: black;
-    /* Blue color for headings */
     text-align: center;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 
+.responsive-image {
+    width: 100%;
+    height: auto;
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.image-container {
+    text-align: center;
+}
+
+.centered-image {
+    display: inline-block;
+    width: 50%;
+    border: 3px solid #555;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.centered-image:hover {
+    transform: scale(1.1);
+}
+
+.styled-image {
+    width: 300px;
+    height: auto;
+    border: 5px solid #f4f4f4;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    filter: grayscale(100%);
+    transition: filter 0.5s;
+}
+
+.styled-image:hover {
+    filter: grayscale(0%);
+}
 
 
 
