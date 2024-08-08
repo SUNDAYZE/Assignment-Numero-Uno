@@ -1,0 +1,8 @@
+body {
+    background-color: #f0f0f0; /* Light grey background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font style */
+    color: #333; /* Dark grey text color */
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Padding around the body */
+    line-height: 1.6; /* Line height for readability */
+}
