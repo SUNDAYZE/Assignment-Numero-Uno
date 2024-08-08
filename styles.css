@@ -6,3 +6,38 @@ body {
     padding: 20px; /* Padding around the body */
     line-height: 1.6; /* Line height for readability */
 }
+
+h1 {
+    color: #0056b3;
+    /* Blue color for headings */
+    text-align: center;
+    /* Center the heading */
+    font-size: 40px;
+}
+
+h2 {
+    color: black;
+    /* Blue color for headings */
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    /* Larger font size for paragraphs */
+    max-width: 600px;
+    /* Limit the width of paragraphs */
+    margin: 0 auto;
+    /* Center paragraphs */
+}
+
+h3 {
+    color: black;
+    /* Blue color for headings */
+    text-align: center;
+}
+
+
+
+
+
+
