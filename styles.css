@@ -98,7 +98,7 @@ header {
 img {
     max-width: 100%;
     height: auto;
-    display: block;
+    display: inline;
     margin: 0 auto;
 }
 
