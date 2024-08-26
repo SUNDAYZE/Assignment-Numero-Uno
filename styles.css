@@ -129,11 +129,10 @@ header {
     /* Add a slight shadow */
 }
 
-
-
-
-
-
+.hero:hover {
+    transform: scale(1.1);
+    /* Slightly increase the image size on hover */
+}
 
 /* List Styles */
 .centered-ul {
