@@ -95,22 +95,45 @@ header {
 }
 
 /* Image Styles */
-img {
+/* ID Selector for the Flexbox Container */
+#image-container {
+    display: flex;
+    /* Enable Flexbox */
+    flex-direction: row;
+    /* Arrange items in a row */
+    justify-content: space-around;
+    /* Space out images evenly */
+    align-items: center;
+    /* Align items vertically centered */
+    flex-wrap: wrap;
+    /* Wrap items to the next line if needed */
+    padding: 10px;
+    /* Add some padding around the container */
+}
+
+/* Class Selector for Individual Images */
+.hero {
     max-width: 100%;
+    /* Ensure images scale responsively */
     height: auto;
-    display: inline;
-    margin: 0 auto;
+    /* Maintain aspect ratio */
+    flex: 1 1 200px;
+    /* Allow images to grow and shrink with a base width */
+    margin: 10px;
+    /* Add some space around each image */
+    border: 2px solid #ccc;
+    /* Add a border around images */
+    border-radius: 8px;
+    /* Round the corners */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    /* Add a slight shadow */
 }
 
-/* Specific styles for each image */
-.styled-image1 {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
 
-.styled-image2 {
-    padding: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-}
+
+
+
+
 
 /* List Styles */
 .centered-ul {
