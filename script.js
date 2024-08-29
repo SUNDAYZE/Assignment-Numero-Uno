@@ -1,6 +1,9 @@
+
 document.addEventListener("DOMContentLoaded", function() {
     const imageContainer = document.getElementById("image-container");
     const images = document.querySelectorAll(".hero");
+    
+
 
     // Function to adjust the Flexbox layout based on the screen width
     function adjustLayout() {
@@ -22,3 +25,15 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+
+
+
+
+
+//Define the function
+//function saleTotal (item1, item2, item3) {
+  //  return item1+ item2 +item3
+//}
+//Call the function saleTotal
+//console.logsaleTotal(2.99, 5.90, 3.50))
