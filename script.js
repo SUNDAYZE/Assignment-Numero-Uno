@@ -27,13 +27,108 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+document.addEventListener("DOMContentLoaded", function() {
+    const imageContainer = document.getElementById('image-container');
+    const heroImage = document.querySelector('.hero');
+
+    // Check if elements are in view and apply fade-in
+    function fadeInOnScroll(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('fade-in');
+                observer.unobserve(entry.target); // Stop observing once the element is visible
+            }
+        });
+    }
+
+    // Set up the Intersection Observer
+    const observerOptions = {
+        threshold: 0.1 // 10% of the element is visible
+    };
+    
+    const observer = new IntersectionObserver(fadeInOnScroll, observerOptions);
+
+    // Observe the elements
+    observer.observe(imageContainer);
+    observer.observe(heroImage);
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    const imageContainer = document.getElementById('image-container');
+    const chefImage = document.querySelector('.chef');
+
+    // Check if elements are in view and apply fade-in
+    function fadeInOnScroll(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('fade-in');
+                observer.unobserve(entry.target); // Stop observing once the element is visible
+            }
+        });
+    }
+
+    // Set up the Intersection Observer
+    const observerOptions = {
+        threshold: 0.1 // 10% of the element is visible
+    };
+    
+    const observer = new IntersectionObserver(fadeInOnScroll, observerOptions);
+
+    // Observe the elements
+    observer.observe(imageContainer);
+    observer.observe(chefImage);
+});
 
 
+document.addEventListener("DOMContentLoaded", function() {
+    const elementsToFade = document.querySelectorAll('.modern2, #image-container, .hero');
+
+    // Function to add the fade-in class when elements are in view
+    function fadeInOnScroll(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('fade-in');
+                observer.unobserve(entry.target); // Stop observing once the element is visible
+            }
+        });
+    }
+
+    // Intersection Observer setup
+    const observerOptions = {
+        threshold: 0.1 // Trigger when 10% of the element is visible
+    };
+
+    const observer = new IntersectionObserver(fadeInOnScroll, observerOptions);
+
+    // Observe each element
+    elementsToFade.forEach(element => {
+        observer.observe(element);
+    });
+});
 
 
-//Define the function
-//function saleTotal (item1, item2, item3) {
-  //  return item1+ item2 +item3
-//}
-//Call the function saleTotal
-//console.logsaleTotal(2.99, 5.90, 3.50))
+document.addEventListener("DOMContentLoaded", function() {
+    const elementsToFade = document.querySelectorAll('.info, #image-container, .hero');
+
+    // Function to add the fade-in class when elements are in view
+    function fadeInOnScroll(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('fade-in');
+                observer.unobserve(entry.target); // Stop observing once the element is visible
+            }
+        });
+    }
+
+    // Intersection Observer setup
+    const observerOptions = {
+        threshold: 0.1 // Trigger when 10% of the element is visible
+    };
+
+    const observer = new IntersectionObserver(fadeInOnScroll, observerOptions);
+
+    // Observe each element
+    elementsToFade.forEach(element => {
+        observer.observe(element);
+    });
+});
