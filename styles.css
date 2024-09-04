@@ -26,32 +26,23 @@ header {
     width: 100%;
     z-index: 1000;
     background-color: #333;
-    overflow: hidden;
-}
-
-.navbar {
-    margin: 0;
 }
 
 .navbar-list {
-    list-style-type: none;
+    list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: space-around;
 }
 
-.navbar-item {
-    display: inline;
-}
-
 .navbar-link {
     display: block;
     color: white;
-    text-align: center;
     padding: 14px 20px;
     text-decoration: none;
     font-size: 18px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .navbar-link:hover {
@@ -82,11 +73,7 @@ header {
 .modern2 {
     font-size: 2rem;
     opacity: 0;
-        transition: opacity 1s ease-in-out;
-}
-
-.fade-in {
-    opacity: 1;
+    transition: opacity 1s ease-in-out;
 }
 
 .modern3 {
@@ -101,93 +88,46 @@ header {
 }
 
 /* Image Styles */
-/* ID Selector for the Flexbox Container */
 #image-container {
     display: flex;
-    /* Enable Flexbox */
-    flex-direction: row;
-    /* Arrange items in a row */
-    justify-content: space-around;
-    /* Space out images evenly */
-    align-items: center;
-    /* Align items vertically centered */
     flex-wrap: wrap;
-    /* Wrap items to the next line if needed */
+    justify-content: space-around;
+    align-items: center;
     padding: 10px;
-    /* Add some padding around the container */
 }
 
-/* Class Selector for Individual Images */
-.hero {
-    max-width: 100%;
-    /* Ensure images scale responsively */
-    height: auto;
-    /* Maintain aspect ratio */
-    flex: 1 1 200px;
-    /* Allow images to grow and shrink with a base width */
-    margin: 10px;
-    /* Add some space around each image */
-    border: 2px solid #ccc;
-    /* Add a border around images */
-    border-radius: 8px;
-    /* Round the corners */
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-    /* Add a slight shadow */
-    opacity: 0;
-        transition: opacity 1s ease-in;
-}
-
-.fade-in {
-    opacity: 1;
-}
-
-.hero:hover {
-    transform: scale(1.1);
-    /* Slightly increase the image size on hover */
-}
-
-/* Class Selector for Individual Images */
+.hero,
 .chef {
     max-width: 100%;
-    /* Ensure images scale responsively */
     height: auto;
-    /* Maintain aspect ratio */
     flex: 1 1 200px;
-    /* Allow images to grow and shrink with a base width */
     margin: 10px;
-    /* Add some space around each image */
     border: 2px solid #ccc;
-    /* Add a border around images */
     border-radius: 8px;
-    /* Round the corners */
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-    /* Add a slight shadow */
     opacity: 0;
-    transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in, transform 0.3s;
+}
+
+.hero:hover,
+.chef:hover {
+    transform: scale(1.1);
 }
 
 .fade-in {
     opacity: 1;
-}
-
-.chef:hover {
-    transform: scale(1.1);
-    /* Slightly increase the image size on hover */
 }
 
 /* List Styles */
 .centered-ul {
-   
     padding: 0;
     margin: 0;
     text-align: center;
 }
 
 .centered-ul li {
-    display: list-item;
     margin: 0 15px;
     list-style: none;
-    
 }
 
 /* Paragraph Styles */
@@ -197,21 +137,26 @@ p {
     margin: 0 auto;
 }
 
-/* Container Styles */
-.container {
+/* Utility Styles */
+.container,
+.info {
     text-align: center;
     font-size: 16px;
     max-width: fit-content;
     margin: 0 auto;
-}
-
-
-.info {
     opacity: 0;
-        transition: opacity 1s ease-in-out;
-    }
+    transition: opacity 1s ease-in-out;
+}
 .fade-in {
     opacity: 1;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
 }
 
 /* Social Media Icons */
@@ -252,14 +197,3 @@ p {
 .instagram {
     background-color: #e4405f;
 }
-
-/* Bold and Italic Utility Classes */
-.bold {
-    font-weight: bold;
-}
-
-.italic {
-    font-style: italic;
-}
-
-
